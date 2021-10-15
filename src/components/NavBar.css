@@ -1,0 +1,32 @@
+.menu{
+    list-style: none;
+    padding: 0;
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+}
+
+.menu li a{
+font-size: 30px;
+text-decoration: none;
+color: white;
+padding: 20px;
+display: block;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a:hover{
+    background: #cc0000;
+}
+
+.marca{
+    font-size: 50px;
+text-decoration: none;
+color: #ff0000;
+padding: 30px;
+
+}
