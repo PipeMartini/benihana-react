@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './components/styles/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Contador from './contador.js';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+  <App />
+  <Contador />
   </React.StrictMode>,
   document.getElementById('root')
 );
