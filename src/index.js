@@ -3,14 +3,15 @@ import ReactDOM from 'react-dom';
 import './components/styles/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Contador from './contador.js';
-import Productos from './components/itemList';
+
+
 
 ReactDOM.render(
   <React.StrictMode>
   <App />
-  <Contador />
+
   </React.StrictMode>,
+  
   document.getElementById('root')
 );
 

@@ -1,34 +1,29 @@
 // mostrar todos los productos mediante las cards del item.js
-import { productos } from './item.js';
+
+import { useEffect } from 'react';
 import { useState } from 'react/cjs/react.development';
-import {productos} from './components/item.js';
+import {item} from './item.js';
+import Producto from './itemCart';
 
 
-const productos = [productos]
 
-const Producto =({title,price,img}) => {
-    return(
-        <>
-        <img>{img}</img>
-        <h1>{title}</h1>
-        <h2>Precio: {price}</h2>
-        </>
-    );
-};
-
-export default function app(){
-    const[productos, setProductos] = useState([producto]);
+export default function ItemList(){
+    const[productos, setProductos] = useState([]);
+    
+   useEffect (() => {
     const task = new Promise ((resolve)=> {
         setTimeout(() => {
-            resolve (productos);
-        }, 2000),
-        
+            resolve (item);
+        }, 2000);
+    });
         task.then (
             (result)=>{
-                console.log(result);
+                setProductos(result);
+                return "retorno1"
             },
             (error)=>{
                 console.log(error)
+                return "error"
             },
         )
         .catch((err)=>{
@@ -37,11 +32,15 @@ export default function app(){
         .finally(()=> {
             console.log("me ejecuto siempre")
         });
+   }, []);
+useEffect(() => {
+},[productos])
+
+console.log('Console log Productos', productos)
     return(
         <div className="app">
-            {productos.map((producto)=> {
-            <Producto name={producto.title} price={producto.price} />
-            }
+            {productos && productos.map((producto)=> {
+           return( <Producto key={producto.id} title={producto.title} price={producto.price} img={producto.img} />)
+            })}
         </div>
-    );
-};
+    )}
