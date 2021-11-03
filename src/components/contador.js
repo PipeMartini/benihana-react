@@ -2,11 +2,11 @@ import { useState } from 'react';
 import './styles/contador.css';
 
 
-const Contador = () => {
+const Contador = ({stock}) => {
 const [count, setCount] = useState(0);
 
 const sumar = () => {
-       if(count < 10){
+       if(count < stock){
     setCount(count +1);
 }else{
     alert ("no hay mas stock");

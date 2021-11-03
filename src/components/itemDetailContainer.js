@@ -1,14 +1,11 @@
-// mostrar todos los productos mediante las cards del item.js
-
+// mostrar todos los productDetail mediante las cards del item.js
 import { useEffect } from 'react';
-import { useState } from 'react/cjs/react.development';
-import {item} from './item.js';
-import Producto from './itemCart';
-
-
+import { useState } from 'react';
+import { item } from './item';
+import ModalDetail from './detail';
 
 export default function ItemList(){
-    const[productos, setProductos] = useState([]);
+    const[productDetail, setProductos] = useState([]);
     
    useEffect (() => {
     const task = new Promise ((resolve)=> {
@@ -34,13 +31,14 @@ export default function ItemList(){
         });
    }, []);
 useEffect(() => {
-},[productos])
+},[productDetail])
 
-console.log('Console log Productos', productos)
+console.log('Console log Productos', productDetail)
     return(
         <div className="app">
-            {productos && productos.map((producto)=> {
-           return( <Producto key={producto.id} title={producto.title} price={producto.price} img={producto.img} stock={producto.stock} />)
+            {productDetail && productDetail.map((productDet)=> {
+           return( <ModalDetail key={productDet.id} title={productDet.title} price={productDet.price} img={productDet.img} stock={productDet.stock} />)
             })}
         </div>
     )}
+
