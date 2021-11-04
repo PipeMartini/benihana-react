@@ -4,7 +4,7 @@ const ItemDetail = ({title, price, img, description}) => {
     return(
         <>
         <div className="itemDetail">
-            <div className="itemContent">
+            <div className="itemDetailContent">
                 <div className="itemOpen">
                     <h2 className="itemDetail_title"> {title} </h2>
                     <h2 className="itemDetail_price">Precio: {price}$</h2>
