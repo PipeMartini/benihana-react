@@ -1,4 +1,4 @@
-.modal{
+.itemDetail{
     position:fixed;
     z-index: 999;
     top:0;
@@ -11,10 +11,10 @@
     align-items: center;
 }
 
-modal_open{
+.itemContent{
     display: flex;
 }
-.modal_container{
+.itemcontainer{
     position: relative;
     min-width: 400px;
     max-width: 500px;

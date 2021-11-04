@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import { useState } from 'react/cjs/react.development';
 import {item} from './item.js';
-import Producto from './itemCart';
+import ItemCard from './itemCard.js';
 
 
 
@@ -40,7 +40,7 @@ console.log('Console log Productos', productos)
     return(
         <div className="app">
             {productos && productos.map((producto)=> {
-           return( <Producto key={producto.id} title={producto.title} price={producto.price} img={producto.img} stock={producto.stock} />)
+           return( <ItemCard key={producto.id} title={producto.title} price={producto.price} img={producto.img} stock={producto.stock} id={producto.id} />)
             })}
         </div>
     )}
