@@ -21,7 +21,7 @@ const eliminar = () => {
 return(
     <>
         <div className="button_area">
-            <h3>Unidades {count}</h3>
+            <h3 className="counText">Unidades {count}</h3>
             <button className="button" onClick={()=>sumar()}> +</button>
             <button className="button" onClick={()=>eliminar()}> -</button>
         </div>

@@ -6,8 +6,7 @@ import ItemDetailContainer from './components/itemDetailContainer.js';
 import ItemListContainer from './components/ItemListContainer';
 
 function App() {
-  const [container, setContainer] = useState('Ecommerce')
-  const handleContainer = () => setContainer('Benihana Ecomerce')
+
   return (
     
     <div className="App">
@@ -15,7 +14,7 @@ function App() {
         <Navbar/>
       <Switch> 
         <Route exact path="/">
-        <ItemListContainer greeting={container} onTitle={handleContainer}/>
+        <ItemListContainer/>
         </Route>
         <Route path="/detail/:id">
           <ItemDetailContainer/>

@@ -7,11 +7,11 @@ const ItemCard =({title, price, img, stock, id}) => {
         <div className="product_position">
             <div className="product_card">
                 <h2 className="product_title"> {title} </h2>
-                <h2 className="product_price">Precio: {price}$</h2>
                 <img className="product_img" src={img}/> 
+                <h2 className="product_price">Precio: {price}$</h2>
                 <Contador stock={stock}></Contador> 
                 <Link to={`/detail/${id}`}>
-                <button>Mas informacion</button> 
+                <button className="product_info">Mas informacion</button> 
                 </Link>
             </div>
         </div>
