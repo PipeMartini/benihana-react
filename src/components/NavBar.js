@@ -3,12 +3,10 @@ import './styles/NavBar.css';
 import './CartWidget';
 import { Link } from "react-router-dom";
 export const Navbar = () => {
-    const styles = { backgroundColor: 'black' }
-    const menu = {backgroundColor: 'darkgrey'}
     return (
-        <body style={styles}>
+        <body>
         <div className="container">
-            <ul style={menu} className="menu">
+            <ul className="menu">
                 <Link to={`/`}>
                     <li><a href="#">Inicio</a></li>
                 </Link>

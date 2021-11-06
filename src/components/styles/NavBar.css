@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
 .menu{
     list-style: none;
     padding: 0;
@@ -9,24 +11,29 @@
 .menu li a{
 font-size: 30px;
 text-decoration: none;
-color: white;
+color: rgb(8, 0, 117);
 padding: 20px;
 display: block;
+font-family: 'Dongle', sans-serif;
 }
 
 .menu li{
     display: inline-block;
     text-align: center;
+    font-family: 'Dongle', sans-serif;
 }
 
 .menu li a:hover{
-    background: #cc0000;
+    background: rgb(8, 0, 117);
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
 }
 
 .marca{
     font-size: 50px;
 text-decoration: none;
-color: #ff0000;
+color: #003686;
 padding: 30px;
+font-family: 'Dongle', sans-serif;
 
 }

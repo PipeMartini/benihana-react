@@ -18,6 +18,10 @@
     font-size: 15px;
     
 }
+.button:hover{
+    scale: 1.1;
+    background-color: rgb(105, 104, 104);
+}
 .counText{
     font-family: 'Roboto','Helvetica Neue',
 }
