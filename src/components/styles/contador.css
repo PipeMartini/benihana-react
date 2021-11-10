@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
 .button_area{
     display: flex;
     justify-content: center;
@@ -16,12 +19,15 @@
     height:35px;
     cursor: pointer;
     font-size: 15px;
-    
+   
 }
 .button:hover{
     scale: 1.1;
     background-color: rgb(105, 104, 104);
 }
 .counText{
-    font-family: 'Roboto','Helvetica Neue',
+    margin: 10px;
+    font-family: 'Dongle', sans-serif;
+    font-size: 25px; 
+    align-content: center;
 }

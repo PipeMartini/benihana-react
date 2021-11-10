@@ -9,7 +9,6 @@ const ItemCard =({title, price, img, stock, id}) => {
                 <h2 className="product_title"> {title} </h2>
                 <img className="product_img" src={img}/> 
                 <h2 className="product_price">Precio: {price}$</h2>
-                <td></td>
                 <Contador stock={stock}></Contador> 
                 <Link to={`/detail/${id}`}>
                 <button className="product_info">Mas informacion</button> 
